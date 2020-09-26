@@ -1,5 +1,5 @@
 # ETF
-Exploratory Testing Foundations -course
+**Exploratory Testing Foundations -course**
 
 Chapter 1: Test target and our options for exploring
 
