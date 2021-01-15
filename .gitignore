@@ -1,3 +1,7 @@
 venv/
 .idea/
 tests-in-docker/.env/
+tests-in-docker/*.html
+tests-in-docker/output.xml
+tests-in-docker/playwright-log.txt
+tests-in-docker/*.png
