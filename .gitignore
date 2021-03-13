@@ -5,3 +5,8 @@ tests-in-docker/*.html
 tests-in-docker/output.xml
 tests-in-docker/playwright-log.txt
 tests-in-docker/*.png
+test-drive/log.html
+test-drive/output.xml
+test-drive/playwright-log.txt
+test-drive/report.html
+*.png

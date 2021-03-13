@@ -1,5 +1,5 @@
 *** Settings ***
-Library     Browser
+Library             Browser
 Test Setup          Default Setup
 Test Teardown       Default Teardown
 Test Template       Verify Word Text
