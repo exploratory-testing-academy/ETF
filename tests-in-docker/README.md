@@ -38,6 +38,8 @@ ENTRYPOINT ["/app/scripts/entrypoint_perf_test.sh"]
 ```
 Additionally, edit ```./scripts/Dockerfile/entrypoint_perf_test_env.sh``` file to add more Pabot tests.
 
+## Example command Win
+docker run --rm --net=host --security-opt seccomp:unconfined --shm-size "256M" -v C:\BitbucketRepos\ETF\tests-in-docker:/app eprime-tests
 
 ## References
 * https://pypi.org/project/robotframework-browser/
