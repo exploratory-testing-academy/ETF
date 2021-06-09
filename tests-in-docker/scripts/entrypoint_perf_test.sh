@@ -3,6 +3,6 @@
 cp test.robot /tmp/
 
 for i in {1..50} ;
-do cp suites/perf_test.robot /tmp/${i}-perf_test.robot ; done
+do cp ./test.robot /tmp/${i}-test.robot ; done
 
-pabot --processes 25 --console verbose --outputdir reports /tmp/*perf_test.robot
+pabot --processes 25 --console verbose --outputdir reports /tmp/*-test.robot
