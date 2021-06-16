@@ -1,5 +1,5 @@
 # README
-Tests in this repository run on Docker with Python 3.9.*
+Tests in this repository run on Docker with Python 3.8.*
 
 Includes:  
   * tests using browser (playwright) library
