@@ -27,21 +27,27 @@ Get the baseline docker image:
 
 Build docker: 
 ```docker build --tag eprime-tests .```
+
 Run on mac/linux:
 ```docker run --rm --net=host --security-opt seccomp:unconfined --shm-size "256M" -v $PWD:/app eprime-tests```
+
 Run on win:
 ```docker run --rm --net=host --security-opt seccomp:unconfined --shm-size "256M" -v <YOUR PROJECT LOCATION>:/app eprime-tests```
+
 ```docker run --rm --net=host --security-opt seccomp:unconfined --shm-size "256M" -v C:\BitbucketRepos\ETF\tests-in-docker:/app eprime-tests```
+
 Cleanup:
 ```docker system prune -a --force```
 
 ## Running Pabot tests
 Pabot tests allow parallel execution of Robot tests. To run Pabot tests, update ```Dockerfile``` and
 enable *perf_test_env* script while disabling *test_env* script and build:
+
 ```
 ENTRYPOINT ["/app/scripts/entrypoint_perf_test.sh"]
 #ENTRYPOINT ["/app/scripts/entrypoint_test.sh"]
 ```
+
 Additionally, edit ```./scripts/Dockerfile/entrypoint_perf_test_env.sh``` file to add more Pabot tests.
 
 ## References
