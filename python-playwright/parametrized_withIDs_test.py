@@ -28,7 +28,7 @@ def this_is_file(text):
     (this_is_file('sample'), 508, 2, 0), 
     (this_is_file('bible'), 31172, 21, 1),
 ],
-ids=['demo', 'not eprime', 'hamlet', 'empty', 'be in forms', 'newline', 'shortened be', 'newline with words', 'slang', 'possessive', 'quoted be', 'not verb', 'apostrophe1', 'apostrophe2', 'file', 'bible' ]
+ids=['demo', 'not eprime', 'hamlet', 'empty', 'be in forms', 'newline', 'contractions', 'newline with words', 'slang', 'possessive', 'quoted be', 'not verb', 'typewriters apostrophe', 'typesetters apostrophe', 'file', 'bible' ]
 )
 
 def test_parametrized_test(page: Page, input_text, expect_wordcount, expect_discouraged, expect_violation):
