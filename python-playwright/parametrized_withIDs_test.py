@@ -25,7 +25,7 @@ def this_is_file(text):
     ("human being", 2, 1, 0),
     ("typewriter's apostrophe", 2, 0, 1), 
     ("typesetter’s apostrophe", 2, 0, 0), 
-    (1000 * "x", 0, 0, 0),
+    (1000 * "x", 1, 0, 0),
     (this_is_file('sample'), 508, 2, 0), 
     (this_is_file('bible'), 31172, 21, 1),
 ],
