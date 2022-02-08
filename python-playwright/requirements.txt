@@ -1,5 +1,6 @@
 playwright
 pytest-playwright
 pytest
+pytest-bdd >= 5.0
 pytest-html
 pytest-rerunfailures
