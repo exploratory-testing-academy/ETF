@@ -23,7 +23,15 @@ data = [
     ("human being", 2, 1, 0),
     ("typewriter's apostrophe", 2, 0, 1), 
     ("typesetter’s apostrophe", 2, 0, 0), 
-    (this_is_sample(), 507, 2, 0)
+    (this_is_sample(), 507, 2, 0), 
+    #("The sky is blue", 4, 1, 0),
+    #("Theskyisblue", 4, 1, 0),
+    #("You're pretty", 3, 1, 0),
+    #("one\ntwo", 2, 0, 0),
+    #("Eeva\'s", "1", "0", "1"),
+    #("<div>hello</div>", "1", "0", "0"),
+    #("hello "*1000, "1000", "0", "0"),
+    #("hello"*1000, "1", "0", "0"),
 ]
 
 
