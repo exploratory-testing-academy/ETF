@@ -10,3 +10,5 @@ test-drive/output.xml
 test-drive/playwright-log.txt
 test-drive/report.html
 *.png
+.DS_Store
+.gitignore
