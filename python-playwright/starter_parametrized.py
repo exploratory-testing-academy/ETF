@@ -9,14 +9,15 @@ def this_is_sample():
     return str(lines)
 
 
-@pytest.mark.parametrize('input_text, expect_wordcount, expect_discouraged, expect_violation', 
+@pytest.mark.parametrize('input_text, expect_wordcount, expect_discouraged, expect_violation',
 [
-    ("Word", 1, 0, 0)
+    ("word", "1", "0", "0")
 ])
 def test_parametrized_test(page: Page, input_text, expect_wordcount, expect_discouraged, expect_violation):
     page.goto(url)
     page.fill("#inputtext", input_text)
     page.click("#CheckForEPrimeButton")
+    expect(page.locator('#eprimeoutput')).to_have_text(input_text)
     expect(page.locator("#wordCount")).to_have_text(str(expect_wordcount))
     expect(page.locator("#discouragedWordCount")).to_have_text(str(expect_discouraged))
     expect(page.locator("#possibleViolationCount")).to_have_text(str(expect_violation))
