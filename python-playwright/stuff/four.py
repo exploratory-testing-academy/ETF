@@ -33,5 +33,3 @@ def test_example(page: Page, input_text, expect_wordcount, expect_discouraged, e
     expect(page.locator("#wordCount")).to_have_text(expect_wordcount)
     expect(page.locator("#discouragedWordCount")).to_have_text(expect_discouraged)
     expect(page.locator("#possibleViolationCount")).to_have_text(expect_violation)
-
-    

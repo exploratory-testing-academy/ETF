@@ -1,5 +1,5 @@
 import pytest
-from playwright.sync_api import Page
+from playwright.sync_api import Page, expect
 
 url = "https://www.exploratorytestingacademy.com/app/"
 
@@ -11,12 +11,12 @@ def this_is_sample():
 
 @pytest.mark.parametrize('input_text, expect_wordcount, expect_discouraged, expect_violation', 
 [
-    ("To be or not to be - Hamlet's dilemma", 9, 2, 1)
+    ("Word", 1, 0, 0)
 ])
 def test_parametrized_test(page: Page, input_text, expect_wordcount, expect_discouraged, expect_violation):
     page.goto(url)
     page.fill("#inputtext", input_text)
     page.click("#CheckForEPrimeButton")
-    assert page.inner_text("#wordCount") == str(expect_wordcount)
-    assert page.inner_text("#discouragedWordCount") == str(expect_discouraged)
-    assert page.inner_text("#possibleViolationCount") == str(expect_violation)
+    expect(page.locator("#wordCount")).to_have_text(str(expect_wordcount))
+    expect(page.locator("#discouragedWordCount")).to_have_text(str(expect_discouraged))
+    expect(page.locator("#possibleViolationCount")).to_have_text(str(expect_violation))
