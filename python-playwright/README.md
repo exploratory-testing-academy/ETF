@@ -2,28 +2,34 @@
 
 Install instructions: https://playwright.dev/python/docs/intro
 
-'''python -m venv --copies .env
+`python -m venv --copies .env`
 
-'''pip install playwright
+`pip install playwright`
 
-'''playwright install
+`playwright install`
 
-'''pip install -r requirements.txt
+`pip install -r requirements.txt`
 
 ### Run browser visible
-pytest --headed
+
+`pytest --headed`
 
 ### Run on these browsers
-pytest --browser chromium --browser webkit --browser firefox
+
+`pytest --browser chromium --browser webkit --browser firefox`
 
 ### Run slower to see
-pytest --slowmo 100
+
+`pytest --slowmo 100`
 
 ### Capture video
-pytest --video on
+
+`pytest --video on`
 
 ### Capture screenshots on fail
-pytest --screenshot only-on-failure
+
+`pytest --screenshot only-on-failure`
 
 ### Define base url
-pytest --base-url http://localhost:8080
+
+`pytest --base-url http://localhost:8080`
