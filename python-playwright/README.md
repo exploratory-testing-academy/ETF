@@ -2,12 +2,13 @@
 
 Install instructions: https://playwright.dev/python/docs/intro
 
-python -m venv --copies .env
+'''python -m venv --copies .env
 
-pip install playwright
-playwright install
+'''pip install playwright
 
-pip install -r requirements.txt
+'''playwright install
+
+'''pip install -r requirements.txt
 
 ### Run browser visible
 pytest --headed
