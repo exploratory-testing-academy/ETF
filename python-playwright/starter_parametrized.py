@@ -15,6 +15,9 @@ def this_is_sample():
     ("If programming's the act of teaching a computer to have a conversation with a user, it most useful to first teach the computer how to speak.","26","0","1"),
     #bug: incorrectly recognized - should be recognized and isn't. 
     #("you're","2","1","0"),
+    #("be\nare\nis", "3", "3", "0"), #bug
+    ("\"be\"", "1", "1", "0"),
+    #("'be'", "1", "1", "0") #bug
 ])
 def test_parametrized_test(page: Page, input_text, expect_wordcount, expect_discouraged, expect_violation):
     page.goto(url)
